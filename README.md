@@ -1,1 +1,1 @@
-Daqui a pouco eu ensino, como mexer
+Daqui a pouco eu ensino como mexer
