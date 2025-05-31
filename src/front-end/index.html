@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel raid bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container-main">
+
+        <h1>Panel de raid do bot</h1>
+
+        <form class="container-form" action="/command" method="post">
+
+            <select name="server" id="servidores-id">
+            </select>
+
+            <select name="command" id="command-id">
+                <option value="nuke">nuke</option>
+                <option value="spawnChannels">spawnmar channels</option>
+                <option value="renameChannels">rename channels</option>
+                <option value="deleteChannels">delete channels</option>
+                <option value="createChannels">create channels</option>
+            </select>
+        <input type="submit" value="ativar comando">
+    </form>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

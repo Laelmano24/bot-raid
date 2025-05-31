@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: url("background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    width: 100dvw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: brightness(0.6) saturate(1.5);
+}
+
+.container-main {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    border: 2px solid #00ff00aa;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ff00aa, 0 0 40px #007700aa;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+}
+
+.container-main h1 {
+    color: #00ff00;
+    font-size: 22px;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #007700;
+    overflow: hidden;
+    border-right: 2px solid #00ff00;
+    white-space: nowrap;
+    animation: typing 2s steps(22), blink 0.75s step-end infinite;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 15px;
+}
+
+.container-form select,
+.container-form input[type="submit"] {
+    background: #0e7f0ebb;
+    color: #ccffcc;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    box-shadow: 0 0 10px #00ff00aa;
+    transition: 0.3s;
+}
+
+.container-form select:hover,
+.container-form input[type="submit"]:hover {
+    background: #0ba10baa;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.container-form option {
+    background: #0c4f0c;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+.container-form input[type="submit"]:active {
+    transform: scale(0.95);
+    background: #086f08aa;
+}
